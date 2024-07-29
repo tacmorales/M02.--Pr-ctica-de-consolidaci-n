@@ -1,7 +1,19 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*/
 
-.bebas-neue-regular {
+.bebas {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+img-container{
+  background-color: yellow;
+  height: 30px;
+  width: 30px;
+}
+
+section#hero{
+  display: grid;
 }
