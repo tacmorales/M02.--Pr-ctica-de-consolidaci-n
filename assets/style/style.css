@@ -1,6 +1,6 @@
-/*
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-*/
+
 
 .bebas {
   font-family: "Bebas Neue", sans-serif;
@@ -8,12 +8,6 @@
   font-style: normal;
 }
 
-img-container{
-  background-color: yellow;
-  height: 30px;
-  width: 30px;
-}
-
-section#hero{
-  display: grid;
+.smaller{
+  
 }
