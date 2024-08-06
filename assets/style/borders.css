@@ -1,0 +1,26 @@
+@import "variables_&_fonts.css";
+
+.my-border-left {
+	border-left: 2px solid var(--straw);
+}
+
+.my-border-right {
+	border-right: 2px solid var(--straw);
+}
+
+.my-border-top {
+	border-top: 2px solid var(--straw);
+}
+
+.my-border-bottom {
+	border-bottom: 2px solid var(--straw);
+}
+
+.rounded-top-right {
+	border-top-right-radius: 1rem;
+}
+
+.rounded-top-left {
+	border-top-left-radius: 1rem;
+}
+

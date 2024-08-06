@@ -1,0 +1,132 @@
+:root {
+	--pineTree: #272822;
+	--straw: #e6db74;
+	--lavenderPurple: #9882bc;
+	--androidGreen: #a9cf38;
+	--skyBlue: #71cee6;
+	/* 	--xs: 0;
+	--sm: 576px;
+	--md: 768px;
+	--lg: 992px;
+	--xl: 1200px;
+	--xxl: 1400px; */
+}
+
+.bebas-neue-regular {
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.fira-sans-extra-condensed-thin {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-extralight {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-light {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-regular {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-medium {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-semibold {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-bold {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-extrabold {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-black {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.fira-sans-extra-condensed-thin-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.fira-sans-extra-condensed-extralight-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.fira-sans-extra-condensed-light-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.fira-sans-extra-condensed-regular-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.fira-sans-extra-condensed-medium-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.fira-sans-extra-condensed-semibold-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.fira-sans-extra-condensed-bold-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.fira-sans-extra-condensed-extrabold-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.fira-sans-extra-condensed-black-italic {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+

@@ -1,196 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root {
-	--pineTree: #272822;
-	--straw: #e6db74;
-	--lavenderPurple: #9882bc;
-	--androidGreen: #a9cf38;
-	--skyBlue: #71cee6;
-/* 	--xs: 0;
-	--sm: 576px;
-	--md: 768px;
-	--lg: 992px;
-	--xl: 1200px;
-	--xxl: 1400px; */
-}
+@import "variables_&_fonts.css";
 
-*, h1, h2, h3, h4, h5, h6{
-  margin: 0;
-}
+@import "borders.css";
 
-body {
-	background-color: var(--pineTree);
-	color: white;
-}
-
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed{
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-}
-
-.fira-sans-extra-condensed-thin {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-extralight {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-light {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-regular {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-medium {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-semibold {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-bold {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-extrabold {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-black {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.fira-sans-extra-condensed-thin-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.fira-sans-extra-condensed-extralight-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.fira-sans-extra-condensed-light-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.fira-sans-extra-condensed-regular-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.fira-sans-extra-condensed-medium-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.fira-sans-extra-condensed-semibold-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.fira-sans-extra-condensed-bold-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.fira-sans-extra-condensed-extrabold-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.fira-sans-extra-condensed-black-italic {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
+@import "myReset.css";
 
 #logo-img,
-#face-img{
-	max-height: 100%;
+#face-img {
+	max-height: 90%;
 	max-width: 100%;
 }
 
-#name{
-	line-height: 80%;
-}
-
-.left-margin {
-	border-left: 2px solid var(--straw);
-}
-
-.right-margin {
-	border-right: 2px solid var(--straw);
-}
-
-.top-margin {
-	border-top: 2px solid var(--straw);
-}
-
-.bottom-margin {
-	border-bottom: 2px solid var(--straw);
+#name {
+	line-height: 8dvh;
+	font-size: 7dvh;
 }
 
 #top-hero div {
-	height: 25dvh;
+	height: 20dvh;
 }
 
 #second-hero div {
 	height: 15dvh;
 }
 
-#second-hero div h1 {
-		font-size: 230%;
-		font-style: italic;
-		font-weight: 400;
+#subTitle1, #subTitle2{
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.yo{
+	font-style: normal;
+	font-weight: 200;
+}
+
+#y{
+  font-size: 250%;
+	font-style: oblique;
 }
 
 @media only screen and (min-width: 768px) {
-	#second-hero div h3 {
-		font-size: 200%;
-	}
-
-	#second-hero div h1 {
-		font-size: 300%;
-	}
+  #y{
+    font-size: 300%;
+  }
 }
 
-#third-hero p{
+#third-hero p {
+	line-height: 170%;
+	text-indent: -5%;
+	text-wrap: pretty;
+}
+
+.h-10{
+  height: 13%;
+}
+
+.letter-spacing{
+	letter-spacing: 2px;
 }
