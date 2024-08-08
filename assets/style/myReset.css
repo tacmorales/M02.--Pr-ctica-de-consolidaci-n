@@ -20,6 +20,7 @@ mark{
 	color: var(--pineTree);
 }
 
+
 .btn{
 	border-width: 2px; /* coincida con el resto de lineas */
 	padding-right: 15px; /* corrección, porque la fuente de letra tiene un espaciado mas grande a la derecha, entonces se reduce el padding por default que es de 16px */

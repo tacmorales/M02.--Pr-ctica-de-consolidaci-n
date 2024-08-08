@@ -17,46 +17,78 @@
 	font-size: 7dvh;
 }
 
-#top-hero div {
+#header div {
 	height: 20dvh;
 }
 
-#second-hero div {
+#title-of-main div {
 	height: 15dvh;
 }
 
-#subTitle1, #subTitle2{
-  font-family: "Fira Sans Extra Condensed", sans-serif;
+#yo-diseno,
+#yo-desarrollo {
+	font-family: "Fira Sans Extra Condensed", sans-serif;
 	font-style: italic;
 	font-weight: 400;
 }
 
-.yo{
+.yo {
 	font-style: normal;
 	font-weight: 200;
 }
 
-#y{
-  font-size: 250%;
+#y {
+	font-size: 250%;
 	font-style: oblique;
 }
 
-@media only screen and (min-width: 768px) {
-  #y{
-    font-size: 300%;
-  }
-}
-
-#third-hero p {
+#body-of-main{
 	line-height: 170%;
 	text-indent: -5%;
 	text-wrap: pretty;
 }
 
-.h-10{
-  height: 13%;
+.h40px {
+	height: 40px;
 }
 
-.letter-spacing{
+.letter-spacing {
 	letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+	#y {
+		font-size: 300%;
+	}
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+	#y {
+		font-size: 250%;
+	}
+
+	#title-of-main div {
+		height: 27dvh;
+	}
+
+	.h40px {
+		height: 20px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	#body-of-main {
+		font-size: calc(1.2rem + 1vw) !important;
+	}
+}
+
+/* ESTILOS ESPECIFICOS PARA PORTFOLIO */
+
+#header-portfolio div {
+	height: 10dvh;
+}
+
+#mis-proyectos{
+	letter-spacing: 4px;
+	word-spacing: 10px;
 }

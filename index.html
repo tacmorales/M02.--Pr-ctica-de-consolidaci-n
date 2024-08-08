@@ -8,26 +8,32 @@
 		<link rel="stylesheet" href="assets/style/bootstrap.css" />
 		<link rel="stylesheet" href="assets/style/style.css" />
 	</head>
-	<body class="d-flex flex-column vh-100">
-		<main class="h-75 d-flex flex-column">
-			<section id="hero" class="container pt-3 flex-grow-1 d-flex flex-column">
-				<div id="top-hero" class="row">
-					<div class="col-6 col-sm-4 my-border-right align-content-center">
-						<img src="assets/img/logoTacMorales.png" id="logo-img" class="img-fluid object-fit-contain" alt="Logo Tac Morales" />
-					</div>
-					<div class="d-none d-sm-block col-sm-4 align-content-center text-center py-1 my-border-top">
-						<img src="assets/img/fotoTac.jpg" id="face-img" class="rounded-5" alt="Foto de Tac Morales en primer plano" />
-					</div>
-					<div class="col-6 col-sm-4 my-border-left align-content-center">
-						<h1 id="name" class="bebas-neue-regular text-end py-2">
-							Tac<br />
-							<span>Morales</span>
-						</h1>
+	<body class="d-flex flex-column">
+		<header class="container">
+			<div id="header" class="row pt-3">
+				<div class="col-6 col-sm-4 my-border-right align-content-center pb-2">
+					<img src="assets/img/logoTacMorales.png" id="logo-img" class="img-fluid object-fit-contain mx-auto d-block" alt="Logo Tac Morales" />
+				</div>
+				<div class="d-none d-sm-block col-sm-4 align-content-center text-center py-1 my-border-top">
+					<img src="assets/img/fotoTac.jpg" id="face-img" class="rounded-5" alt="Foto de Tac Morales en primer plano" />
+				</div>
+				<div class="col-6 col-sm-4 my-border-left align-content-center">
+					<div class="row justify-content-center">
+						<div class="col-auto px-0">
+							<h1 id="name" class="bebas-neue-regular text-end py-2">
+								Tac<br />
+								<span>Morales</span>
+							</h1>
+						</div>
 					</div>
 				</div>
-				<div id="second-hero" class="row">
-					<div id="subTitle1" class="col-5 my-border-right my-border-top px-0 align-content-center rounded-top-right">
-						<div class="text-end p-3 pt-2">
+			</div>
+		</header>
+		<main class="d-flex flex-column">
+			<div id="main" class="container flex-grow-1 d-flex flex-column">
+				<div id="title-of-main" class="row">
+					<div id="yo-diseno" class="col-5 my-border-right my-border-top px-0 align-content-center rounded-top-right">
+						<div class="text-end pe-3 pb-3 ps-3 pt-2">
 							<h2>
 								<span class="yo pe-2">Yo</span>Diseño interfaces <span class="d-none d-sm-inline"><br /></span>y páginas web
 							</h2>
@@ -38,36 +44,40 @@
 							<h2 id="y" class="bebas-neue-regular">&</h2>
 						</div>
 					</div>
-					<div id="subTitle2" class="col-5 my-border-left my-border-top px-0 align-content-center rounded-top-left">
-						<div class="p-3 pt-2">
+					<div id="yo-desarrollo" class="col-5 my-border-left my-border-top px-0 align-content-center rounded-top-left">
+						<div class="pe-3 pb-3 ps-3 pt-2">
 							<h2>
 								<span class="yo pe-2">Yo</span>Desarrollo <span class="d-none d-sm-inline"><br /></span>aplicaciones web
 							</h2>
 						</div>
 					</div>
 				</div>
-				<div id="third-hero" class="row px-0 pt-2 pt-sm-0 my-border-bottom justify-content-center flex-grow-1 align-content-center">
+				<div class="row px-0 pt-2 pt-sm-0 my-border-bottom justify-content-center flex-grow-1 align-content-center">
 					<div class="col-sm-6">
-						<p class="fira-sans-extra-condensed fs-4 m-3 ps-2">
+						<p id="body-of-main" class="fira-sans-extra-condensed fs-4 m-3 ps-2">
 							<mark>¡Hola Mundo!</mark> <br /><span class="pe-2">Me gusta mucho la tecnología, tanto para el trabajo 👔 como para el ocio 🕹️.</span>
-							<span> Trabajo diseñando 🖌️ y creando sistemas ⚙️ para automatizar procesos. </span>
+							<span> Trabajo diseñando y creando sistemas ⚙️ para automatizar procesos 📈. </span>
 						</p>
 					</div>
 				</div>
-			</section>
+			</div>
 		</main>
-		<footer class="container flex-grow-1 d-flex flex-column">
-			<div class="row h-10">
+		<footer class="container flex-grow-1 d-flex flex-column pb-3">
+			<div class="row h40px">
 				<div class="col-3 my-border-right"></div>
 				<div class="col-6 my-border-right"></div>
 				<div class="col-3"></div>
 			</div>
 			<nav class="row flex-grow-1">
 				<div class="col-6 text-center px-4">
-					<button class="btn btn-outline-primary btn-lg bebas-neue-regular fs-3 letter-spacing"><a class="text-reset text-decoration-none" href="/portfolio.html">Ver Portafolio 👀</a></button>
+					<button class="btn btn-outline-primary btn-lg bebas-neue-regular fs-3 letter-spacing">
+						<a class="text-reset text-decoration-none" href="/portfolio.html">Ver Portafolio 👀</a>
+					</button>
 				</div>
 				<div class="col-6 text-center">
-					<button class="btn btn-outline-secondary btn-lg bebas-neue-regular fs-3 letter-spacing"><a class="text-reset text-decoration-none" href="/contact-me.html">Contactame 💬</a></button>
+					<button class="btn btn-outline-secondary btn-lg bebas-neue-regular fs-3 letter-spacing">
+						<a class="text-reset text-decoration-none" href="/contact-me.html">Contactame 💬</a>
+					</button>
 				</div>
 			</nav>
 		</footer>
