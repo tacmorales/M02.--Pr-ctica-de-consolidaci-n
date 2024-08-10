@@ -1,0 +1,89 @@
+@import "variables_&_fonts.css";
+
+/* XS */
+@media screen and (min-width: 320px) {
+  textarea.form-control{
+  margin-top: 22px;
+  }
+}
+
+/* LG */
+@media screen and (min-width: 992px) {
+  textarea.form-control{
+    margin-top: 0px;
+  }
+}
+
+.form-column{
+  gap: 22px;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border-radius: 0px;
+  border-color: var(--straw);
+}
+
+.form-group span {
+  position: absolute;
+  color: #636363;
+  pointer-events: none;
+  font-size: 1em;
+  transform: translate(20px, -38px);
+  transition: 0.5s;
+}
+
+#label-mensaje {
+  transform: translate(20px, -184px);
+}
+
+#label-nombre, #label-mensaje, #label-correo, #label-fono{
+  color: rgb(184, 184, 184)
+}
+
+.form-group input:valid ~ span,
+.form-group input:focus ~ span,
+.form-group textarea:valid ~ #label-mensaje,
+.form-group textarea:focus ~ #label-mensaje {
+  color: white;
+  transform: translate(20px, -61px);
+  font-size: 0.9em;
+  padding: 0 10px;
+  background-color: var(--pineTree);
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-image-source: linear-gradient(180deg, var(--straw) 50%, transparent 50%);
+  border-image-slice: 1;
+}
+
+.form-group textarea:valid ~ #label-mensaje,
+.form-group textarea:focus ~ #label-mensaje {
+  transform: translate(20px, -205px);
+}
+
+.form-control:focus,
+.form-control:valid {
+  border-color: var(--straw);
+}
+
+input, textarea{
+  background-color: var(--pineTree);
+}
+
+.form-control, .form-control:focus{
+  background-color: var(--pineTree);
+  color: white;
+}
+
+
+#contactanos button{
+	width: 200px;
+}
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,98 +12,151 @@
   </head>
   <body class="d-flex flex-column vh-100">
     <header class="container my-border-bottom">
-      <div id="header-portfolio" class="row pt-2 justify-content-center">
+      <div id="header-portfolio" class="row align-items-center">
         <div
-          class="col-6 col-sm-4 align-content-center text-center my-border-left my-border-right"
+          class="col-6 my-border-right p-0 ps-4 align-content-center"
         >
-          <h1 id="mis-proyectos" class="bebas-neue-regular py-2">
-            Mis Proyectos
-          </h1>
+            <h1 id="mis-proyectos" class="bebas-neue-regular text-sm-center display-5">Mis Proyectos</h1>
         </div>
+        <nav class="col-6">
+          <div class="row align-items-center">
+            <div class="h_line col-2 col-sm-7 p-0"></div>
+            <div class="my-border-left col-10 col-sm-5 p-0">
+              <a
+                class="box-sizing-content-box text-decoration-none align-items-center h-100 d-inline-block next-page-a"
+                href="/contact-me.html"
+              >
+                <div
+                  class="bebas-neue-regular fs-3 letter-spacing w-100 px-3"
+                >
+                  <p class="next-page-p mt-2 mb-1 fs-3">
+                    <span class="d-block">Siguiente página</span>
+                    <span class="d-block fs-5 pt-2"
+                      >Contáctame<span class="d-none d-sm-inline"
+                        >💬</span
+                      ></span
+                    >
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <main class="d-flex flex-column my-border-bottom container">
       <section id="portfolio" class="container p-3">
         <div class="row">
-          <div class="col-sm-4 pb-3 pb-sm-0">
-            <div class="card">
+          <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-sm-0">
+            <div class="card h-100">
               <img
-                src="https://placecats.com/millie/300/200"
+                src="https://placecats.com/millie/300/150"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
                 <h5 class="card-title">Orden en las Ordenes</h5>
                 <p class="card-text">
-                  Sistema de ordenes de trabajo implementado para administrar un
-                  taller de producción gráfica -Okima-
+                  Sistema de flujo para venta, producción y entrega de productos
+                  implementado en taller de producción gráfica.
                 </p>
-                <a href="#" class="btn btn-primary">Ver repositorio</a>
+                <a href="#" class="btn btn-outline-light">Ver repositorio</a>
               </div>
-              <div id="card-footer-1" class="card-footer">2 days ago</div>
+              <div class="card-footer">Actualizado 02-06-2024</div>
             </div>
           </div>
-          <div class="col-sm-4 pb-3 pb-sm-0">
-            <div class="card">
+          <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-sm-0">
+            <div class="card h-100">
               <img
-                src="https://placecats.com/300/200"
+                src="https://placecats.com/300/150"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
                 <h5 class="card-title">Okima.cl</h5>
                 <p class="card-text">
-                  Diseño e implementación de web estática -excepto por un contact form- para la tienda Okima Impresiones.
+                  Diseño e implementación de web estática para una tienda
+                  ubicada en San Miguel, Santiago.
                 </p>
-                <a href="#" class="btn btn-primary">Ver la web</a>
+                <a href="#" class="btn btn-outline-light">Ver la web</a>
               </div>
+              <div class="card-footer">Actualizado 2022</div>
             </div>
           </div>
-          <div class="col-sm-4 pb-3 pb-sm-0">
-            <div class="card">
+          <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-sm-0">
+            <div class="card h-100">
               <img
-                src="https://placecats.com/millie_neo/300/200"
+                src="https://placecats.com/millie_neo/300/150"
                 class="card-img-top"
                 alt="..."
               />
               <div class="card-body">
                 <h5 class="card-title">Mario Verde</h5>
                 <p class="card-text">
-                  Juego realizado en scratch, para implementar "gravedad"
+                  Juego realizado en scratch, en el que se implementa el concepto de gravedad.
                 </p>
-                <a href="#" class="btn btn-primary">Jugar juego</a>
+                <a href="#" class="btn btn-outline-light">Ver juego</a>
               </div>
+              <div class="card-footer">Actualizado 2017</div>
+
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 pb-3 pb-sm-0">
+            <div class="card h-100">
+              <img
+                src="https://placecats.com/millie_neo/300/150"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">ventaDeGarage PorSiempre.cl</h5>
+                <p class="card-text">
+                  Un cotizador de mis objetos personales y algunos ajenos.
+                </p>
+                <a href="#" class="btn btn-outline-light">Ver la web</a>
+              </div>
+              <div class="card-footer">Es un invento, no se ha hecho.</div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="container flex-grow-1 d-flex flex-column pb-3">
-      <div class="row h40px">
-        <div class="col-3 my-border-right"></div>
-        <div class="col-6 my-border-right"></div>
-        <div class="col-3"></div>
+    <footer class="flex-grow-1 d-flex flex-column">
+      <div class="container">
+        <div class="row h40px">
+          <div class="col-3 my-border-right"></div>
+          <div class="col-6 my-border-right"></div>
+          <div class="col-3"></div>
+        </div>
+        <nav class="row flex-grow-1">
+          <div class="col-6 text-center">
+            <button
+              class="btn btn-outline-terciary btn-lg bebas-neue-regular fs-3 letter-spacing"
+            >
+              <a class="text-reset text-decoration-none" href="/index.html"
+                >Ir a Inicio 🏠</a
+              >
+            </button>
+          </div>
+          <div class="col-6 text-center">
+            <button
+              class="btn btn-outline-secondary btn-lg bebas-neue-regular fs-3 letter-spacing"
+            >
+              <a class="text-reset text-decoration-none" href="/contact-me.html"
+                >Contáctame 💬</a
+              >
+            </button>
+          </div>
+        </nav>
       </div>
-      <nav class="row flex-grow-1">
-        <div class="col-6 text-center px-4">
-          <button
-            class="btn btn-outline-primary btn-lg bebas-neue-regular fs-3 letter-spacing"
-          >
-            <a class="text-reset text-decoration-none" href="/portfolio.html"
-              >Ver Portafolio 👀</a
-            >
-          </button>
-        </div>
-        <div class="col-6 text-center">
-          <button
-            class="btn btn-outline-secondary btn-lg bebas-neue-regular fs-3 letter-spacing"
-          >
-            <a class="text-reset text-decoration-none" href="/contact-me.html"
-              >Contactame 💬</a
-            >
-          </button>
-        </div>
-      </nav>
+      <div class="row col-12 mt-4 bg-purple mx-0 h-50 text-center align-items-center">
+        <div class="col-3">
+					<a href="/index.html"><img src="assets/img/logoTacMorales.png" class="" alt="Logo Tac Morales" width="70em" height="70em"/></a>
+				</div>
+        <div class="col-3 "><a href="https://github.com/tacmorales" class=""><svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 16 16"><path fill="white" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a></div>
+        <div class="col-3"><a href="https://www.linkedin.com/in/tac-yon-morales-04a481197/"><svg xmlns="http://www.w3.org/2000/svg" width="3.5em" height="3.5em" viewBox="0 0 24 24"><path fill="white" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg></a></div>
+        <div class="col-3"><a href="mailto:tacmorales@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="3.5em" height="3.5em" viewBox="0 0 24 24"><path fill="white" d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg></a></div>
+      </div>
     </footer>
     <script src="assets/script/bootstrap.bundle.js"></script>
   </body>
