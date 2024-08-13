@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-@import "variables_&_fonts.css";
+@import "variables-&-fonts.css";
 
 @import "borders.css";
 
@@ -66,33 +64,8 @@
 	letter-spacing: 2px;
 }
 
-/* Dispositivos md hacia arriba*/
-@media only screen and (min-width: 768px) {
-	#y {
-		font-size: 300%;
-	}
-}
-
-/* Celulares en horizontal */
-@media only screen and (max-height: 575.98px) and (orientation: landscape) {
-	#y {
-		font-size: 250%;
-	}
-
-	#title-of-main div {
-		height: 27dvh;
-	}
-
-	.h40px {
-		height: 20px;
-	}
-}
-
-/* Pantallas grandes */
-@media only screen and (min-width: 1400px) {
-	#body-of-main {
-		font-size: calc(1.2rem + 1vw) !important;
-	}
+#lenguajes h2{
+	font-size: 2em;
 }
 
 /* ESTILOS ESPECIFICOS PARA PORTFOLIO */
@@ -101,19 +74,18 @@
 	height: 15dvh;
 }
 
+#lenguajes>div {
+	height: 100%;
+}
+
+#lenguajes h2{
+	letter-spacing: 2px;
+	word-spacing: 3px;
+}
+
 #mis-proyectos, #contactame{
 	letter-spacing: 4px;
 	word-spacing: 10px;
-}
-
-@media only screen and (max-width: 576px) {
-	.fs-3 {
-		font-size: 1rem !important;
-	}
-
-	.next-page{
-		line-height: 150%;
-	}
 }
 
 .h_line{
@@ -158,4 +130,66 @@
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: var(--androidGreen);
   --bs-gradient: none;
+}
+
+path{
+	fill: var(--pineTree	)
+}
+
+#lenguajes img{
+	max-height: 100px;
+}
+
+#lenguajes img:hover{
+	transform:scale(1.5);
+}
+
+/* Dispositivos md hacia arriba*/
+@media only screen and (min-width: 768px) {
+	#y {
+		font-size: 300%;
+	}
+	#lenguajes h2{
+		font-size: 3em;
+	}
+}
+
+/* Celulares en horizontal */
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+	#y {
+		font-size: 250%;
+	}
+
+	#title-of-main div {
+		height: 27dvh;
+	}
+
+	.h40px {
+		height: 20px;
+	}
+}
+
+/* Pantallas grandes */
+@media only screen and (min-width: 1400px) {
+	#body-of-main {
+		font-size: calc(1.2rem + 1vw) !important;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.fs-3 {
+		font-size: 1rem !important;
+	}
+
+	.next-page{
+		line-height: 150%;
+	}
+}
+
+figcaption{
+	text-align: center;
+	font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+	font-size: 1.2em;
 }

@@ -1,4 +1,4 @@
-@import "variables_&_fonts.css";
+@import "variables-&-fonts.css";
 
 .my-border-left {
 	border-left: 2px solid var(--straw);
