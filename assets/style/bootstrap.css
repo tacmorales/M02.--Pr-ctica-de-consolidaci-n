@@ -7725,7 +7725,7 @@ textarea.form-control-lg {
 }
 
 .min-vh-100 {
-  min-height: 100vh !important;
+  min-height: 100dvh !important;
 }
 
 .flex-fill {

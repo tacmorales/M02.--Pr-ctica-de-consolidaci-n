@@ -1,123 +1,109 @@
-@import "variables-&-fonts.css";
+/* @import "variables-&-fonts.css";
 
 @import "borders.css";
 
 @import "myReset.css";
 
 @import "contact-form.css";
+ */
 
-#logo-img,
-#face-img {
-	max-height: 90%;
-	max-width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --pineTree: #272822;
+  --straw: #e6db74;
+  --lavenderPurpleLight: #b698e6;
+  --lavenderPurple: #9882bc;
+  --lavenderPurpleDark: #9c66f1;
+  --androidGreen: #a9cf38;
+  --skyBlue: #71cee6;
+  --androidGreen-light: #d0fc4c;
 }
 
-#name {
-	line-height: 8dvh;
-	font-size: 7dvh;
+/* "my-reset" Se reescriben tags, clases de bootstrap, y se crean nuevas clases similares a bootstrap con el prefijo my-*/
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  margin: 0;
 }
 
-#header div {
-	height: 20dvh;
+body {
+  background-color: var(--pineTree);
+  color: white;
 }
 
-#title-of-main div {
-	height: 15dvh;
+mark {
+  background-color: var(--straw);
+  color: var(--pineTree);
 }
 
-#yo-diseno,
-#yo-desarrollo {
-	font-family: "Fira Sans Extra Condensed", sans-serif;
-	font-style: italic;
-	font-weight: 400;
+path {
+  fill: var(--pineTree);
 }
 
-#y {
-	font-size: 250%;
-	font-style: oblique;
+/*Clases de utilidad (utility-class)*/
+.h-40px {
+  height: 40px;
 }
 
-#body-of-main{
-	line-height: 170%;
-	text-indent: -5%;
-	text-wrap: pretty;
-}
-
-.yo {
-	font-style: normal;
-	font-weight: 200;
-}
-
-.h40px {
-	height: 40px;
-}
-
-.h-70{
-	height: 70% !important;
-}
-
-.h-25{
-	height: 25% !important;
+.h-70 {
+  height: 70% !important;
 }
 
 .letter-spacing {
-	letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
-#lenguajes h2{
-	font-size: 2em;
+.my-border-left {
+  border-left: 2px solid var(--straw);
 }
 
-/* ESTILOS ESPECIFICOS PARA PORTFOLIO */
-
-#header-portfolio>div {
-	height: 15dvh;
+.my-border-right {
+  border-right: 2px solid var(--straw);
 }
 
-#lenguajes>div {
-	height: 100%;
+.my-border-top {
+  border-top: 2px solid var(--straw);
 }
 
-#lenguajes h2{
-	letter-spacing: 2px;
-	word-spacing: 3px;
+.my-border-bottom {
+  border-bottom: 2px solid var(--straw);
 }
 
-#mis-proyectos, #contactame{
-	letter-spacing: 4px;
-	word-spacing: 10px;
+.rounded-top-right {
+  border-top-right-radius: 1rem;
 }
 
-.h_line{
-	height:2px;
-	opacity: 1;
-	background: var(--straw);
+.rounded-top-left {
+  border-top-left-radius: 1rem;
 }
 
-.next-page-p{
-	line-height: 80%;
+.h_line {
+  height: 2px;
+  opacity: 1;
+  background: var(--straw);
 }
 
-.box-sizing-content-box{
-	box-sizing: content-box;
+.box-sizing-content-box {
+  box-sizing: content-box;
 }
 
-.next-page-a:hover{
-	background-color: var(--straw);
-	color: var(--pineTree);
-}
-
-.next-page-a{
-	color: white;
-}
-
-.bg-purple{
-	background-color: var(--lavenderPurple);
+.bg-purple {
+  background-color: var(--lavenderPurple);
 }
 
 .btn-outline-terciary {
+  /*clase de utilidad?*/
   --bs-btn-color: var(--androidGreen-light);
-  --bs-btn-border-color: var(--straw);
+  --bs-btn-border-color: var(--androidGreen-light);
   --bs-btn-hover-color: var(--pineTree);
   --bs-btn-hover-bg: var(--androidGreen);
   --bs-btn-hover-border-color: var(--androidGreen);
@@ -131,65 +117,436 @@
   --bs-btn-disabled-border-color: var(--androidGreen);
   --bs-gradient: none;
 }
+/*Se terminan las Clases de utilidad (utility-class)*/
 
-path{
-	fill: var(--pineTree	)
+/*Reescribiendo clases de bootstrap*/
+.btn {
+  border-width: 2px; /* coincida con el resto de lineas */
+  padding-right: 15px; /* corrección, porque la fuente de letra tiene un espaciado mas grande a la derecha, entonces se reduce el padding por default que es de 16px */
+  padding-bottom: 7px; /* mismo concepto que el anterior, solo que aplicado al padding inferior */
 }
 
-#lenguajes img{
-	max-height: 100px;
+.btn-outline-secondary {
+  --bs-btn-color: var(--lavenderPurple);
+  --bs-btn-border-color: var(--lavenderPurple);
+  --bs-btn-hover-color: var(--pineTree);
+  --bs-btn-hover-bg: var(--lavenderPurple);
+  --bs-btn-hover-border-color: var(--lavenderPurple);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: var(--pineTree);
+  --bs-btn-active-bg: var(--lavenderPurple);
+  --bs-btn-active-border-color: var(--lavenderPurple);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--lavenderPurple);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--lavenderPurple);
+  --bs-gradient: none;
 }
 
-#lenguajes img:hover{
-	transform:scale(1.5);
+.btn-outline-primary {
+  --bs-btn-color: var(--skyBlue);
+  --bs-btn-border-color: var(--skyBlue);
+  --bs-btn-hover-color: var(--pineTree);
+  --bs-btn-hover-bg: var(--skyBlue);
+  --bs-btn-hover-border-color: var(--skyBlue);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: var(--pineTree);
+  --bs-btn-active-bg: var(--skyBlue);
+  --bs-btn-active-border-color: var(--skyBlue);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--skyBlue);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--skyBlue);
+  --bs-gradient: none;
+}
+
+.btn-outline-light {
+  --bs-btn-color: #f8f9fa;
+  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-border-color: #f8f9fa;
+  --bs-btn-focus-shadow-rgb: 248, 249, 250;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f8f9fa;
+  --bs-btn-active-border-color: #f8f9fa;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #f8f9fa;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #f8f9fa;
+  --bs-gradient: none;
+  border: 1px solid var(--skyBlue);
+  color: var(--skyBlue);
+}
+
+.btn-outline-light:hover {
+  color: var(--pineTree);
+  background-color: var(--skyBlue);
+  border-color: var(--pineTree);
+}
+
+.btn-outline-light:focus-visible {
+  color: var(--pineTree);
+  background-color: var(--skyBlue);
+  border-color: var(--pineTree);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+.btn-outline-primary:focus-visible {
+  color: var(--pineTree);
+  background-color: var(--skyBlue);
+  border-color: var(--pineTree);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+.btn-outline-secondary:focus-visible {
+  color: var(--pineTree);
+  background-color: var(--lavenderPurple);
+  border-color: var(--pineTree);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--lavenderPurpleDark);
+  --bs-btn-border-color: var(--lavenderPurpleDark);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--lavenderPurpleLight);
+  --bs-btn-hover-border-color: rgb(44, 29, 68);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(144, 99, 218);
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--lavenderPurple);
+  --bs-btn-disabled-border-color: var(--lavenderPurple);
+}
+
+.card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: ;
+  --bs-card-subtitle-color: ;
+  --bs-card-border-width: var(--bs-border-width);
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(
+    var(--bs-border-radius) - (var(--bs-border-width))
+  );
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(33, 39, 41, 0.03);
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: white;
+  --bs-card-bg: var(--pineTree);
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  color: var(--bs-body-color);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border: 2px solid var(--straw);
+  border-radius: var(--bs-card-border-radius);
+}
+
+.card-footer {
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  color: rgba(230, 219, 116, 0.7);
+  border-top: 1px solid rgba(230, 219, 116, 0.65);
+  background-color: var(--bs-card-cap-bg);
+}
+/* Aqui termina el renombramiendo de bootstrap*/
+
+/*Fuentes de letra*/
+.fira-sans-extra-condensed {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+/*Aqui termina fuentes de letra*/
+
+/*Reglas generales para todas las secciones*/
+/*Básicamente header, footer, pero eso no significa que todos los headers y footers sean iguales, se le da más especificidad necesaria en su sección de cada página*/
+.next-page-p {
+  line-height: 80%;
+}
+.next-page-a:hover {
+  background-color: var(--straw);
+  color: var(--pineTree);
+}
+
+.next-page-a {
+  color: white;
+}
+
+/*Termina reglas generales para todas las secciones*/
+
+/*index.html*/
+#logo-img,
+#face-img {
+  max-height: 90%;
+  max-width: 100%;
+}
+
+#name {
+  line-height: 8dvh;
+  font-size: 7dvh;
+}
+
+#header div {
+  height: 20dvh;
+}
+
+#title-of-main div {
+  height: 15dvh;
+}
+
+#yo-diseno,
+#yo-desarrollo {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#y {
+  font-size: 250%;
+  font-style: oblique;
+}
+
+#body-of-main {
+  line-height: 150%;
+  text-indent: -5%;
+  text-wrap: pretty;
+}
+
+.yo {
+  font-style: normal;
+  font-weight: 200;
+}
+
+/* ESTILOS portfolio.html */
+
+#header-portfolio > div {
+  height: 15dvh;
+}
+
+#lenguajes h2 {
+  font-size: 2em;
+}
+
+#lenguajes > div {
+  height: 100%;
+}
+
+#lenguajes h2 {
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+#title {
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  font-size: calc(3rem + 0.3vw);
+}
+
+#lenguajes img {
+  max-height: 100px;
+}
+
+#lenguajes img:hover {
+  transform: scale(1.5);
 }
 
 /* Dispositivos md hacia arriba*/
 @media only screen and (min-width: 768px) {
-	#y {
-		font-size: 300%;
-	}
-	#lenguajes h2{
-		font-size: 3em;
-	}
+  #y {
+    font-size: 300%;
+  }
+  #lenguajes h2 {
+    font-size: 3em;
+  }
 }
 
 /* Celulares en horizontal */
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
-	#y {
-		font-size: 250%;
-	}
+  #y {
+    font-size: 250%;
+  }
 
-	#title-of-main div {
-		height: 27dvh;
-	}
+  #title-of-main div {
+    height: 27dvh;
+  }
 
-	.h40px {
-		height: 20px;
-	}
+  .h40px {
+    height: 20px;
+  }
 }
 
 /* Pantallas grandes */
 @media only screen and (min-width: 1400px) {
-	#body-of-main {
-		font-size: calc(1.2rem + 1vw) !important;
-	}
+  #body-of-main {
+    font-size: calc(1.2rem + 1vw) !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-	.fs-3 {
-		font-size: 1rem !important;
-	}
+  .fs-3 {
+    font-size: 1rem !important;
+  }
 
-	.next-page{
-		line-height: 150%;
-	}
+  .next-page {
+    line-height: 150%;
+  }
 }
 
-figcaption{
-	text-align: center;
-	font-family: "Fira Sans", sans-serif;
+figcaption {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 500;
   font-style: italic;
-	font-size: 1.2em;
+  font-size: 1.2em;
+}
+
+.label-error {
+  border-image-source: linear-gradient(
+    180deg,
+    #cf2e41 75%,
+    transparent 25%
+  ) !important;
+}
+
+.form-column {
+  gap: 22px;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+  padding-bottom: 0.8em;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border-radius: 0px;
+  border-color: var(--straw);
+}
+
+.form-group span {
+  position: absolute;
+  color: #636363;
+  pointer-events: none;
+  font-size: 1.1em;
+  transform: translate(20px, -38px);
+  transition: 0.5s;
+}
+
+#label-mensaje {
+  transform: translate(20px, -207px);
+}
+
+.form-group input:valid ~ #label-nombre,
+.form-group input:focus ~ #label-nombre,
+.form-group input:valid ~ #label-correo,
+.form-group input:focus ~ #label-correo,
+.form-group input:valid ~ #label-fono,
+.form-group input:focus ~ #label-fono,
+.form-group textarea:valid ~ #label-mensaje,
+.form-group textarea:focus ~ #label-mensaje {
+  color: white;
+  transform: translate(20px, -67px);
+  font-size: 1em;
+  padding: 0 10px;
+  background-color: var(--pineTree);
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-image-source: linear-gradient(
+    180deg,
+    var(--straw) 75%,
+    transparent 25%
+  );
+  border-image-slice: 1;
+}
+
+.form-group textarea:valid ~ #label-mensaje,
+.form-group textarea:focus ~ #label-mensaje {
+  transform: translate(20px, -236px);
+}
+
+input,
+textarea {
+  background-color: var(--pineTree);
+}
+
+.form-control,
+.form-control:focus {
+  background-color: var(--pineTree);
+  color: white;
+}
+
+#label-nombre,
+#label-mensaje,
+#label-correo,
+#label-fono {
+  color: #b8b8b8;
+}
+
+#contactanos button {
+  width: 200px;
+  color: var(--pineTree);
+}
+
+/* XS */
+@media screen and (min-width: 320px) {
+  textarea.form-control {
+    margin-top: 22px;
+  }
+}
+
+/* LG */
+@media screen and (min-width: 992px) {
+  textarea.form-control {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .w-md-80 {
+    width: 80% !important;
+  }
 }
