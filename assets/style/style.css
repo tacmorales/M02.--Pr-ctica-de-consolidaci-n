@@ -15,11 +15,12 @@
   --pineTree: #272822;
   --straw: #e6db74;
   --lavenderPurpleLight: #b698e6;
-  --lavenderPurple: #9882bc;
+  --lavenderPurple: hsl(263, 30%, 62%);
   --lavenderPurpleDark: #9c66f1;
-  --androidGreen: #a9cf38;
-  --skyBlue: #71cee6;
-  --androidGreen-light: #d0fc4c;
+  --skyBlue: rgb(113, 206, 230);
+  --skyBlueDark: rgb(50, 162, 190);
+  --skyBlueDarkOpacity: rgba(50, 162, 190, 0.7);
+  --thickOfBorders: 4px;
 }
 
 /* "my-reset" Se reescriben tags, clases de bootstrap, y se crean nuevas clases similares a bootstrap con el prefijo my-*/
@@ -62,20 +63,52 @@ path {
   letter-spacing: 2px;
 }
 
-.my-border-left {
-  border-left: 2px solid var(--straw);
+.my-border-left-straw {
+  border-left: var(--thickOfBorders) solid var(--straw);
 }
 
-.my-border-right {
-  border-right: 2px solid var(--straw);
+.my-border-right-straw {
+  border-right: var(--thickOfBorders) solid var(--straw);
 }
 
-.my-border-top {
-  border-top: 2px solid var(--straw);
+.my-border-top-straw {
+  border-top: var(--thickOfBorders) solid var(--straw);
 }
 
-.my-border-bottom {
-  border-bottom: 2px solid var(--straw);
+.my-border-bottom-straw {
+  border-bottom: var(--thickOfBorders) solid var(--straw);
+}
+
+.my-border-left-skyBlue {
+  border-left: var(--thickOfBorders) solid var(--skyBlue);
+}
+
+.my-border-right-skyBlue {
+  border-right: var(--thickOfBorders) solid var(--skyBlue);
+}
+
+.my-border-top-skyBlue {
+  border-top: var(--thickOfBorders) solid var(--skyBlue);
+}
+
+.my-border-bottom-skyBlue {
+  border-bottom: var(--thickOfBorders) solid var(--skyBlue);
+}
+
+.my-border-left-lavenderPurple {
+  border-left: var(--thickOfBorders) solid var(--lavenderPurple);
+}
+
+.my-border-right-lavenderPurple {
+  border-right: var(--thickOfBorders) solid var(--lavenderPurple);
+}
+
+.my-border-top-lavenderPurple {
+  border-top: var(--thickOfBorders) solid var(--lavenderPurple);
+}
+
+.my-border-bottom-lavenderPurple {
+  border-bottom: var(--thickOfBorders) solid var(--lavenderPurple);
 }
 
 .rounded-top-right {
@@ -84,6 +117,7 @@ path {
 
 .rounded-top-left {
   border-top-left-radius: 1rem;
+
 }
 
 .h_line {
@@ -102,28 +136,38 @@ path {
 
 .btn-outline-terciary {
   /*clase de utilidad?*/
-  --bs-btn-color: var(--androidGreen-light);
-  --bs-btn-border-color: var(--androidGreen-light);
+  --bs-btn-color: var(--straw); /* light */
+  --bs-btn-border-color: var(--straw); /* light */
   --bs-btn-hover-color: var(--pineTree);
-  --bs-btn-hover-bg: var(--androidGreen);
-  --bs-btn-hover-border-color: var(--androidGreen);
+  --bs-btn-hover-bg: var(--straw); /* normal */
+  --bs-btn-hover-border-color: var(--straw); /* normal */
   --bs-btn-focus-shadow-rgb: 13, 110, 253;
   --bs-btn-active-color: var(--pineTree);
-  --bs-btn-active-bg: var(--androidGreen);
-  --bs-btn-active-border-color: var(--androidGreen);
+  --bs-btn-active-bg: var(--straw); /* normal */
+  --bs-btn-active-border-color: var(--straw); /* normal */
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: var(--androidGreen);
+  --bs-btn-disabled-color: var(--straw); /* normal */
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: var(--androidGreen);
+  --bs-btn-disabled-border-color: var(--straw); /* normal */
   --bs-gradient: none;
 }
 /*Se terminan las Clases de utilidad (utility-class)*/
 
 /*Reescribiendo clases de bootstrap*/
 .btn {
-  border-width: 2px; /* coincida con el resto de lineas */
+  border-width: 4px; /* coincida con el resto de lineas */
   padding-right: 15px; /* corrección, porque la fuente de letra tiene un espaciado mas grande a la derecha, entonces se reduce el padding por default que es de 16px */
   padding-bottom: 7px; /* mismo concepto que el anterior, solo que aplicado al padding inferior */
+}
+
+.btn:hover {
+  text-shadow: 1px 0 #6d6d6d;
+}
+
+.btn-lg:hover {
+  letter-spacing: 2px;
+  text-shadow: 1px 0 #6d6d6d;
+  transform: scale(1.05);
 }
 
 .btn-outline-secondary {
@@ -234,10 +278,10 @@ path {
   --bs-card-subtitle-color: ;
   --bs-card-border-width: var(--bs-border-width);
   --bs-card-border-color: var(--bs-border-color-translucent);
-  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-border-radius: 0.5rem;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: calc(
-    var(--bs-border-radius) - (var(--bs-border-width))
+    0.5rem - (var(--bs-border-width))
   );
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
@@ -257,14 +301,14 @@ path {
   word-wrap: break-word;
   background-color: var(--bs-card-bg);
   background-clip: border-box;
-  border: 2px solid var(--straw);
+  border: 3px solid var(--skyBlueDark);
   border-radius: var(--bs-card-border-radius);
 }
 
 .card-footer {
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
-  color: rgba(230, 219, 116, 0.7);
-  border-top: 1px solid rgba(230, 219, 116, 0.65);
+  color: var(--skyBlueDarkOpacity);
+  border-top: 1px solid var(--skyBlueDarkOpacity);
   background-color: var(--bs-card-cap-bg);
 }
 /* Aqui termina el renombramiendo de bootstrap*/
@@ -331,6 +375,10 @@ path {
   height: 20dvh;
 }
 
+#title-of-main{
+  overflow: hidden;
+}
+
 #title-of-main div {
   height: 15dvh;
 }
@@ -349,7 +397,6 @@ path {
 
 #body-of-main {
   line-height: 150%;
-  text-indent: -5%;
   text-wrap: pretty;
 }
 
@@ -360,21 +407,14 @@ path {
 
 /* ESTILOS portfolio.html */
 
-#header-portfolio > div {
-  height: 15dvh;
-}
-
 #lenguajes h2 {
   font-size: 2em;
+  letter-spacing: 2px;
+  word-spacing: 3px;
 }
 
 #lenguajes > div {
   height: 100%;
-}
-
-#lenguajes h2 {
-  letter-spacing: 2px;
-  word-spacing: 3px;
 }
 
 #title {
@@ -385,6 +425,7 @@ path {
 
 #lenguajes img {
   max-height: 100px;
+  transition: all .2s ease-in-out
 }
 
 #lenguajes img:hover {
@@ -423,6 +464,7 @@ path {
   }
 }
 
+/* Pantallas pequeñas */
 @media only screen and (max-width: 576px) {
   .fs-3 {
     font-size: 1rem !important;
@@ -461,9 +503,11 @@ figcaption {
 
 .form-group input,
 .form-group textarea {
+  background-color: var(--pineTree);
   padding: 12px;
   border-radius: 0px;
-  border-color: var(--straw);
+  border-width: 3px;
+  border-color: var(--lavenderPurple);
 }
 
 .form-group span {
@@ -476,41 +520,37 @@ figcaption {
 }
 
 #label-mensaje {
-  transform: translate(20px, -207px);
+  transform: translate(20px, -213px);
 }
 
-.form-group input:valid ~ #label-nombre,
+.form-group input:not(:placeholder-shown) ~ #label-nombre,
 .form-group input:focus ~ #label-nombre,
-.form-group input:valid ~ #label-correo,
+.form-group input:not(:placeholder-shown) ~ #label-correo,
 .form-group input:focus ~ #label-correo,
-.form-group input:valid ~ #label-fono,
+.form-group input:not(:placeholder-shown) ~ #label-fono,
 .form-group input:focus ~ #label-fono,
-.form-group textarea:valid ~ #label-mensaje,
-.form-group textarea:focus ~ #label-mensaje {
+.form-group textarea:not(:placeholder-shown) ~ #label-mensaje,
+.form-group textarea:focus ~ #label-mensaje{
   color: white;
-  transform: translate(20px, -67px);
+  transform: translate(20px, -76px);
   font-size: 1em;
   padding: 0 10px;
   background-color: var(--pineTree);
-  border-top: 1px solid;
-  border-right: 1px solid;
-  border-left: 1px solid;
+  border-top: 3px solid;
+  border-right: 3px solid;
+  border-left: 3px solid;
   border-image-source: linear-gradient(
     180deg,
-    var(--straw) 75%,
+    var(--lavenderPurple) 75%,
     transparent 25%
   );
   border-image-slice: 1;
+  padding-top: 5px;
 }
 
-.form-group textarea:valid ~ #label-mensaje,
+.form-group textarea:not(:placeholder-shown) ~ #label-mensaje,
 .form-group textarea:focus ~ #label-mensaje {
-  transform: translate(20px, -236px);
-}
-
-input,
-textarea {
-  background-color: var(--pineTree);
+  transform: translate(20px, -249px);
 }
 
 .form-control,
@@ -543,10 +583,65 @@ textarea {
   textarea.form-control {
     margin-top: 0px;
   }
-}
-
-@media screen and (min-width: 992px) {
   .w-md-80 {
     width: 80% !important;
   }
+
+  .form-group textarea:not(:placeholder-shown) ~ #label-mensaje,
+  .form-group textarea:focus ~ #label-mensaje {
+    transform: translate(20px, -250px);
+  }
+
+  textarea{
+    height: 100%;
+  }
+
+}
+
+/* menor o igual a 992 */
+@media screen and (max-width: 991px) {
+  .form-group textarea:not(:placeholder-shown) ~ #label-mensaje,
+  .form-group textarea:focus ~ #label-mensaje {
+    transform: translate(20px, -222px);
+  }
+
+  #label-mensaje {
+    transform: translate(20px, -185px);
+  }
+
+  textarea{
+    height: 200px;
+  }
+}
+
+/* SM */
+@media screen and (min-width: 576px) {
+  #body-of-main {
+    column-count: 2;
+    column-gap: 0.5em;
+  }
+}
+
+.form-control:focus{
+  border-color: var(--lavenderPurple);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(151, 129, 187, 0.25);
+}
+
+.shake{
+  animation: shake 0.2s ease-in-out 0s 2;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(12px);}
+  100% { transform: translateX(-12px)}
+}
+
+#yo-desarrollo, #yo-diseno, #real-main{
+  background-color: #151613;
+}
+
+#y-container{
+  background-color: var(--pineTree);
 }
