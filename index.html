@@ -4,27 +4,24 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>TacMorales</title>
-		<link rel="icon" type="image/x-icon" href="assets/img/logoTacMorales.ico">
+		<link rel="icon" type="image/x-icon" href="assets/img/logoTacIco4Chrome.ico">
 		<link rel="stylesheet" href="assets/style/bootstrap.css">
 		<link rel="stylesheet" href="assets/style/style.css">
 	</head>
 	<body>
-		<div class="d-flex flex-column min-vh-100" >
+		<div id="main-container" class="d-flex flex-column" >
 			<header class="container-fluid">
 				<div id="header" class="row pt-3">
-					<div class="col-6 col-sm-4 my-border-right-straw align-content-center pb-2">
-						<img src="assets/img/logoTacMorales.png" id="logo-img" class="img-fluid object-fit-contain mx-auto d-block" alt="Logo Tac Morales">
+					<div class="col-4 col-sm-4 align-content-center pb-2">
+						<img src="assets/img/logoTacMoralesFondoOscuro.webp" id="logo-img" class="img-fluid object-fit-contain mx-auto d-block" alt="Logo Tac Morales">
 					</div>
-					<div class="d-none d-sm-block col-sm-4 align-content-center text-center py-1 my-border-top-straw">
+					<div id="mi-foto-container" class="d-none d-sm-block col-sm-4 align-content-center text-center py-1 my-border-top-straw my-border-left-straw my-border-right-straw">
 						<img src="assets/img/fotoTac.jpg" id="face-img" class="rounded-5" alt="Foto de Tac Morales en primer plano">
 					</div>
-					<div class="col-6 col-sm-4 my-border-left-straw align-content-center">
+					<div class="col-8 col-sm-4 align-content-center">
 						<div class="row justify-content-center">
 							<div class="col-auto px-0">
-								<h1 id="name" class="bebas-neue-regular text-end py-2">
-									Tac<br>
-									<span>Morales</span>
-								</h1>
+								<h1 id="name" class="bebas-neue-regular text-end py-2"><span>Mi nombre es</span><br>Tac Morales</h1>
 							</div>
 						</div>
 					</div>
@@ -40,10 +37,8 @@
 								</h2>
 							</div>
 						</div>
-						<div id="y-container" class="col-2 text-center pt-4 px-0 my-border-bottom-straw">
-							<div class="bebas-neue-regular">
-								<h2 id="y" class="bebas-neue-regular">&amp;</h2>
-							</div>
+						<div id="y-container" class="col-2 text-center my-border-bottom-straw">
+							<h2 id="y" class="bebas-neue-regular text-center">&amp;</h2>
 						</div>
 						<div id="yo-desarrollo" class="col-5 my-border-left-straw my-border-top-straw px-0 align-content-center rounded-top-left">
 							<div class="pe-3 pb-3 ps-3 pt-2">
@@ -67,9 +62,9 @@
 			<footer class="d-flex flex-column">
 				<nav class="container mb-5">
 					<div class="row h-40px">
-						<div class="col-3 col-sm-2 my-border-right-straw"></div>
-						<div class="col-6 col-sm-4 my-border-right-skyBlue"></div>
-						<div class="d-none d-sm-block col-sm-4 my-border-right-lavenderPurple"></div>
+						<div class="d-none d-sm-block col-sm-2 my-border-right-straw"></div>
+						<div class="col-3 col-sm-4 my-border-right-skyBlue"></div>
+						<div class="col-6 col-sm-4 my-border-right-lavenderPurple"></div>
 						<div class="col-3 col-sm-2"></div>
 					</div>
 					<div class="row">
@@ -77,10 +72,10 @@
 							<a class="text-decoration-none w-100 w-md-80 h-100 btn btn-outline-terciary btn-lg bebas-neue-regular letter-spacing align-content-center fs-3 disabled" href="/index.html">Ir a Inicio <br class="d-sm-none">🏠</a>
 						</div>
 						<div class="col-6 col-sm-4 text-center">
-							<a class="text-decoration-none w-100 w-md-80 h-100 btn btn-outline-primary btn-lg bebas-neue-regular letter-spacing fs-3 align-content-center" href="/portfolio.html">Ver Portafolio 👀</a>
+							<a class="text-decoration-none w-100 w-md-80 h-100 btn btn-outline-primary btn-lg bebas-neue-regular letter-spacing fs-3 align-content-center" href="/portfolio.html">Ver Portafolio <br class="d-sm-none">👀</a>
 						</div>
 						<div class="col-6 col-sm-4 text-center">
-							<a class="text-decoration-none w-100 w-md-80 h-100 btn btn-outline-secondary btn-lg bebas-neue-regular letter-spacing fs-3 align-content-center" href="/contact-me.html">Contáctame 💬</a>
+							<a class="text-decoration-none w-100 w-md-80 h-100 btn btn-outline-secondary btn-lg bebas-neue-regular letter-spacing fs-3 align-content-center" href="/contact-me.html">Contáctame <br class="d-sm-none">💬</a>
 						</div>
 					</div>
 				</nav>
@@ -88,7 +83,7 @@
 					<div class="container">
 						<div class="row text-center align-items-center">
 							<div class="col-3">
-								<a href="/index.html"><img src="assets/img/logoTacMorales.png" class="" alt="Logo principal que te lleva al inicio de la página."
+								<a href="/index.html"><img src="assets/img/logoTacMoralesFondoPurpura.webp" class="" alt="Logo principal que te lleva al inicio de la página."
 										width="70em" height="70em"></a>
 							</div>
 							<div class="col-3">
@@ -115,10 +110,12 @@
 						</div>
 					</div>
 				</div>
-			</footer>
+		</footer>
 		</div>
+		<div id="estrella" class="estrella"></div>
 		<script src="assets/script/bootstrap.bundle.js"></script>
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-		<script src="assets/script/script.js"></script>
+		<script src="assets/script/kinet.js"></script>
+		<script src="assets/script/mouseTracker.js"></script>
 	</body>
 </html>
